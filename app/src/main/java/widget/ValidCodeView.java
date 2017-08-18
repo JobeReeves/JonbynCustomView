@@ -24,6 +24,7 @@ public class ValidCodeView extends AppCompatEditText {
     private int bottomLineWidth;
     private int maxCount = 6;
     private String text = "";
+    private int currentTextLength = 0;
 
     Paint linePaint;
     Paint textPaint;
