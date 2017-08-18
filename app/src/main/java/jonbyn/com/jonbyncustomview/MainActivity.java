@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import widget.ValidCodeView;
+import jonbyn.com.jonbyncustomview.widget.ValidCodeView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(6 == s.length()) {
+                if(validCodeView.getMaxCount() == s.length()) {
                     btnSendValid.setEnabled(true);
                 } else {
                     btnSendValid.setEnabled(false);

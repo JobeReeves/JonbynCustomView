@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ValidCodeView">
+        <attr name="valid_count" format="integer" />
+        <attr name="text_size" format="integer" />
+        <attr name="text_color" format="color" />
+        <attr name="line_color" format="color" />
+        <attr name="dot_color" format="color" />
+        <attr name="input_type" format="enum">
+            <enum name="type_normal" value="0" />
+            <enum name="type_psd" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>
