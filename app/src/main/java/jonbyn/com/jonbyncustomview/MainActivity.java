@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import jonbyn.com.jonbyncustomview.widget.ValidCodeView;
+import jonbyn.com.customview.ValidCodeView;
 
 public class MainActivity extends AppCompatActivity {
 

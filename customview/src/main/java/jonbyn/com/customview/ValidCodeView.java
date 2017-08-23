@@ -1,4 +1,4 @@
-package jonbyn.com.jonbyncustomview.widget;
+package jonbyn.com.customview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,8 +9,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.InputFilter;
 import android.util.AttributeSet;
-
-import jonbyn.com.jonbyncustomview.R;
 
 /**
  * Created by Jonbyn on 2017/8/17.
@@ -57,7 +55,7 @@ public class ValidCodeView extends AppCompatEditText {
     private void initAttrs(AttributeSet attrs) {
         TypedArray typedArray = mContext.obtainStyledAttributes(attrs, R.styleable.ValidCodeView);
         maxCount = typedArray.getInt(R.styleable.ValidCodeView_valid_count, 6);
-        lineColor = typedArray.getColor(R.styleable.ValidCodeView_line_color, ContextCompat.getColor(mContext, R.color.def_line_color));
+        lineColor = typedArray.getColor(R.styleable.ValidCodeView_line_color, ContextCompat.getColor(mContext, R.color.colorAccent));
         textColor = typedArray.getColor(R.styleable.ValidCodeView_text_color, ContextCompat.getColor(mContext, R.color.colorAccent));
         dotColor = typedArray.getColor(R.styleable.ValidCodeView_dot_color, ContextCompat.getColor(mContext, R.color.colorAccent));
         textSize = typedArray.getDimension(R.styleable.ValidCodeView_text_size, 20);
